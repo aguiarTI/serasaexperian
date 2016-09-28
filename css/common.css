@@ -1,0 +1,566 @@
+/*
+ * @project Serasa Experian
+ * @version 1.0
+ * @author Thiago Aguiar
+ * @copyright 2015
+ ==================== CASCADING STYLE SHEETS ==================== */
+
+/* ==================== font ==================== */
+@font-face {
+	font-family: "gothic720lt";
+	src: url("../font/gothic/gothic-720-light-bt.eot");
+	src: url("../font/gothic/gothic-720-light-bt.eot#iefix") format("embedded-opentype"),
+		 url("../font/gothic/gothic-720-light-bt.woff") format("woff"),
+		 url("../font/gothic/gothic-720-light-bt.ttf") format("truetype"),
+		 url("../font/gothic/gothic-720-light-bt.svg") format("svg"); font-weight: normal; font-style: normal;
+}
+
+/* ==================== global ==================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	font-family: 'arial';
+	font-size: 1em; 
+	list-style-type: none; 
+	text-decoration: none; 
+	margin: 0; 
+	padding: 0;
+}
+section, footer	{
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
+	float: left;
+}
+section h5 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: left;
+	padding: 15px 30px 0;
+}
+section p {
+	text-align: justify;
+	padding: 15px 30px;
+}
+section p.note {
+	font-size: 0.85em;
+}
+div.grid {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+div.grid.medium {
+	max-width: 960px;
+}
+div.grid.large {
+	max-width: 1200px;
+}
+a.btn {
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: auto;
+	padding: 10px 40px 12px 40px;
+	position: relative;
+}
+a.btn span {
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 0 2px;
+	display: inline-block;	
+}
+a.btn.large {
+	padding: 25px 50px 23px 50px;
+}
+a.btn.large span {
+	font-size: 1.4em;
+}
+.txtgray {
+	color: #B1B0B0;
+}
+.txtblue {
+	color: #347ebf;
+}
+.bgblue {
+	background-color: #347ebf;
+}
+.bgblue:hover {
+	background-color: #22537e;
+}
+.txtgreenlt {
+	color: #81a74e;
+}
+.bggreenlt {
+	background-color: #81a74e;
+}
+.bggreenlt:hover {
+	background-color: #546d32;
+}
+.txtgreendk {
+	color: #777734;
+}
+.bdgreendk {
+	border: 1px solid #777734;
+}
+
+/* ==================== header ==================== */
+header {
+	background-color: #FFFFFF;
+	text-align: center;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 3px 11px -2px rgba(119,119,119,1);
+	-moz-box-shadow: 0px 3px 11px -2px rgba(119,119,119,1);
+	box-shadow: 0px 3px 11px -2px rgba(119,119,119,1);
+	width: 100%;
+	height: auto;
+	padding: 40px 0 35px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+header h1 {
+	text-indent: -9999px;
+	width: 210px;
+	height: 40px;
+	float: right;
+}
+header h1 a {
+	background: url(../img/logo-420x78.png) 0 0 no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;	
+}
+header h2 {
+	font-size: 1.5em;
+	padding: 3px 0 0 0;
+	float: left;
+}
+header h2 span {
+	color: #528d44;
+	padding: 3px 0 0 0;
+	position: relative;
+	float: left;
+}
+header h2 span.ico {
+	background: url(../img/ico-certificado_digital-34x34.jpg) 0 0 no-repeat;
+	width: 34px;
+	height: 34px;
+	margin: 0 5px 0 0;
+	padding: 0;	
+}
+
+/* ==================== feature ==================== */
+section.feature {
+	background: url(../img/bg_feature-1200x1166.jpg) no-repeat;
+	background-position: center -120px;
+	margin-top: 112px;
+}
+section.feature div.grid.large {
+	height: auto;
+	min-height: 450px;
+}
+section.feature div.content {
+	text-align: left;
+	width: 350px;
+	height: auto;
+	position: absolute;
+	bottom: 10px;
+	left: 13%;
+	z-index: 2;
+}
+section.feature div.content h3, section.feature div.content h4, section.feature div.content a, section.feature div.content p, section.feature div.content span {
+	font-family: 'gothic720lt';
+}
+section.feature div.content h3, section.feature div.content h4 {
+	font-weight: normal;
+	color: #198b33;
+	padding: 15px 0;
+	position: relative;
+}
+section.feature div.content h3 {
+	font-size: 2.3em;
+	line-height: 1.1em;
+}
+section.feature div.content h4 {
+	font-size: 1.5em;
+	line-height: 1.1em;
+	letter-spacing: 0.01em;
+}
+section.feature div.content ul {
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	position: relative;
+}
+section.feature div.content ul li {
+	width: 100%;
+	height: 82px;
+	position: relative;
+}
+section.feature div.content ul li.first {
+	background-color: #32994a;
+	text-align: left;
+}
+section.feature div.content ul li.first:hover {
+	background-color: #1c6f2f;
+}
+section.feature div.content ul li.last {
+	background-color: #515151;
+	text-align: right;
+}
+section.feature div.content ul li.last:hover {
+	background-color: #222222;
+}
+section.feature div.content ul li span.arrow {
+	width: 25px; 
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+section.feature div.content ul li.first span.arrow {
+	background: url(../img/icon-arrow_first-25x82.png) 0 0 no-repeat;
+	right: -25px;
+}
+section.feature div.content ul li.last span.arrow {
+	background: url(../img/icon-arrow_last-25x82.png) 0 0 no-repeat;
+	left: -25px;
+}
+section.feature div.content ul li.first:hover span.arrow {
+	background: url(../img/icon-arrow_first_actived-25x82.png) 0 0 no-repeat;
+	right: -25px;
+}
+section.feature div.content ul li.last:hover span.arrow {
+	background: url(../img/icon-arrow_last_actived-25x82.png) 0 0 no-repeat;
+	left: -25px;
+}
+section.feature div.content ul li a {
+	font-size: 1.2em;
+	font-weight: lighter;
+	line-height: 1.3em;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+section.feature div.content ul li a p {
+	color: #DFDFDF;
+	padding: 17px;
+	font-weight: lighter;
+}
+section.feature div.content ul li a p span {
+	color: #FFFFFF;
+}
+section.feature div.photo {
+	background: url(../img/bg_feature-1200x500.png) right bottom no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 450px;
+	position: relative;
+	float: right;
+	z-index: 1;
+}
+
+/* ==================== product ==================== */
+section.product {
+	padding: 30px 0;
+}
+section.product ul {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+section.product ul li.item {
+	vertical-align: top;
+	width: 210px;
+	height: auto;
+	margin: 20px 45px;
+	position: relative;
+	display: inline-block;
+}
+section.product ul li.item img, section.product ul li.item ul, section.product ul li.item a {
+	margin: 10px auto;
+	position: relative;
+	display: inline-block;
+}
+section.product ul li.item ul {
+	width: 100%;
+	margin-top: 0;
+	position: relative;
+}
+section.product ul li.item ul li {
+	font-size: 0.9em;
+	text-align: justify;
+	width: 100%;
+	margin: 15px 0;
+	position: relative;
+}
+section.product ul li.item ul li.first {
+	margin-top: 0;
+}
+section.product ul li.item ul li.last {
+	margin-bottom: 0;
+}
+section.product ul li.item ul li span {
+	color: #686868;
+}
+section.product ul li.item ul li span.bullet {
+	background: url(../img/icon-see-20x20.png) center center no-repeat;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px 0 0;
+	float: left;
+}
+
+/* ==================== security ==================== */
+section.security {
+	background: url(../img/bg-security-1200x160.png) 0 0 no-repeat;
+	background-color: #dedecd;
+	border-bottom: 10px solid #777734;
+	text-align: left;
+	padding: 30px 0 0 0;
+}
+section.security div.content {
+	max-width: 500px;
+	position: relative;
+	float: left;
+}
+section.security div.content p {
+	font-family: 'gothic720lt';
+	font-size: 1.6em;
+	line-height: 1.3em;
+	color: #777734;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+section.security div.code {
+	margin-right: 20px;
+	position: relative;
+	float: right;
+}
+section.security a.btn {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	float: right;
+}
+section.security a.btn:hover {
+	background-color: #777734;
+}
+section.security a.btn span {
+	color: #777734;
+}
+section.security a.btn:hover span {
+	color: #FFFFFF;
+}
+section.security p.note {
+	color: #777734;
+	width: 100%;
+	float: left;
+}
+
+/* ==================== topic ==================== */
+section.topic {
+	padding: 30px 0 0 0;
+}
+section.topic ul {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+section.topic ul li {
+	vertical-align: top;
+	width: 120px;
+	height: auto;
+	margin: 20px 30px;
+	position: relative;
+	display: inline-block;
+}
+section.topic ul li img, section.topic ul li span {
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+}
+section.topic ul li span {
+	font-size: 0.9em;
+	color: #686868;
+}
+section.topic p.note {
+	margin-top: 50px;
+}
+
+/* ==================== footer ==================== */
+footer {	
+	background-color: #656565;
+	border-top: 10px solid #555555;
+	text-align: left;
+	padding: 20px 0;
+}
+footer p {
+	font-size: 0.75em;
+	color: #DFDFDF;
+}
+footer p a {
+	color: #DFDFDF;
+}
+footer div.copyright {
+	max-width: 600px;
+	position: relative;
+	float: left;
+}
+footer ul {
+	width: 225px;
+	height: auto;
+	position: relative;
+	float: right;
+}
+footer ul li {
+	text-indent: -9999px;
+	width: 46px;
+	height: 46px;
+	margin: 0 5px;
+	position: relative;
+	display: inline-block;
+}
+footer ul li a {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+footer ul li.linkedin {
+	background: url(../img/icon-linkedin-46x46.png) center center no-repeat;
+}
+footer ul li.facebook {
+	background: url(../img/icon-facebook-46x46.png) center center no-repeat;
+}
+footer ul li.youtube {
+	background: url(../img/icon-youtube-46x46.png) center center no-repeat;
+}
+footer ul li.twitter {
+	background: url(../img/icon-twitter-46x46.png) center center no-repeat;
+}
+
+/* ==================== responsive ==================== */
+@media screen and (max-width: 469px) {
+	section.feature div.photo {
+		height: 300px;
+		background-position: right;
+		background-size: cover;
+	}
+}
+@media screen and (min-width: 470px) and (max-width: 709px) {
+	section.feature div.photo {
+		height: 350px;
+		background-position: right;
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 609px) {
+	header {
+		padding: 20px 0;
+	}
+	header h1, header h2 {
+		float: none;
+		margin: 0 auto;
+	}
+	header h2 {
+		width: 210px;
+		margin-top: 15px;
+	}
+	header h2 span {
+		font-size: 0.8em;
+		padding: 8px 0 0 0;
+	}
+	section.feature {
+		margin-top: 120px;
+	}
+}
+@media screen and (min-width: 610px) and (max-width: 980px) {
+	header h1, header h2 {
+		margin: 0 30px;
+	}
+}
+@media screen and (max-width: 619px) {
+	section.product ul li.item {
+		margin: 20px 10px;
+	}
+}
+@media screen and (max-width: 709px) {
+	section.feature div.content {
+		margin: 50px auto 0;
+		position: relative;		
+		left: 0;
+	}
+	section.feature div.content h3, section.feature div.content h4 {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 719px) {
+	section.topic ul li {
+		margin: 20px 10px;
+	}
+}
+@media screen and (max-width: 809px) {
+	section.security {
+		background-image: none;;
+	}
+	section.security div.content, section.security div.code {
+		margin: 0 auto;
+		padding: 10px 0;
+		float: none;		
+	}
+	section.security div.code {
+		width: 276px;
+	}
+	section.security div.code a.btn {
+		float: none;
+		display: inline-block;
+	}
+	section.security p.note {
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media screen and (max-width: 849px) {
+	footer div.copyright {
+		text-align: center;
+		margin: 0 auto;
+		padding: 10px;
+		float: none;
+	}
+	footer ul {
+		margin: 0 auto;
+		padding: 10px 0;
+		float: none;
+	}
+}
+@media screen and (max-width: 859px) {
+	section.feature div.content {
+		width: 300px;
+	}
+	section.feature div.content ul li a {
+		font-size: 1.03em;
+		line-height: 1.3em;
+	}
+}
+@media screen and (min-width: 710px) and (max-width: 960px) {
+	section.feature div.content {
+		left: 40px;
+	}
+}
